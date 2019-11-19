@@ -3,6 +3,8 @@ package com.app.ExpenseManagerLast.controller;
 import java.util.List;
 import javax.servlet.http.HttpSession;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,6 +30,7 @@ import com.app.ExpenseManagerLast.service.IUserService;
 
 public class UserController {
 
+	private static final Logger logger = LogManager.getLogger(UserController.class);
 	
 	@Autowired
 	private IUserService userService;
@@ -42,8 +45,10 @@ public class UserController {
 	public ResponseEntity<String> registerUser(@RequestBody userModel user) {
 		try {
 			if (user.getPassword().equals(user.getConfirmPassword())) {
+				logger.info("login successfull");
 				return new ResponseEntity<String>(userService.resgiserUser(user), HttpStatus.OK);
 			}
+			logger.error("login successfull");
 			return new ResponseEntity<String>("password dosen't match", HttpStatus.INTERNAL_SERVER_ERROR);
 		} catch (Exception e) {
 			return new ResponseEntity<String>("Registeration failed", HttpStatus.INTERNAL_SERVER_ERROR);

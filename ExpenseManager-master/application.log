@@ -315,3 +315,587 @@
 2019-11-19 14:29:43.979 DEBUG 67964 --- [RMI TCP Connection(4)-127.0.0.1] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@50ce2dbe] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@35306c35]
 2019-11-19 14:29:43.983  INFO 67964 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2019-11-19 14:29:43.997  INFO 67964 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-11-19 15:06:00.055  INFO 63836 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 63836 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-19 15:06:00.058  INFO 63836 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-19 15:06:00.097  INFO 63836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 15:06:00.097  INFO 63836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-19 15:06:00.627  INFO 63836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 15:06:00.644  INFO 63836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-11-19 15:06:00.870  INFO 63836 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5553b59f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 15:06:01.143  INFO 63836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-19 15:06:01.159  INFO 63836 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-19 15:06:01.159  INFO 63836 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-19 15:06:01.349  INFO 63836 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-19 15:06:01.349  INFO 63836 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1251 ms
+2019-11-19 15:06:01.384 DEBUG 63836 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-19 15:06:01.461  INFO 63836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-19 15:06:01.877  INFO 63836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-19 15:06:01.912  INFO 63836 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-19 15:06:01.951  INFO 63836 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-11-19 15:06:01.952  INFO 63836 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-19 15:06:02.055  INFO 63836 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-19 15:06:02.075 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@25dff3fd
+2019-11-19 15:06:02.075 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@25dff3fd
+2019-11-19 15:06:02.075 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@25dff3fd
+2019-11-19 15:06:02.076 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4d461786
+2019-11-19 15:06:02.076 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@6d6d017e
+2019-11-19 15:06:02.077 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@1add71e3
+2019-11-19 15:06:02.078 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@47736a1f
+2019-11-19 15:06:02.078 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@47736a1f
+2019-11-19 15:06:02.078 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@47736a1f
+2019-11-19 15:06:02.079 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@5128d0bf
+2019-11-19 15:06:02.079 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@5128d0bf
+2019-11-19 15:06:02.079 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@5128d0bf
+2019-11-19 15:06:02.080 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@73a18f15
+2019-11-19 15:06:02.080 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@73a18f15
+2019-11-19 15:06:02.080 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@73a18f15
+2019-11-19 15:06:02.081 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@73142fc6
+2019-11-19 15:06:02.081 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@73142fc6
+2019-11-19 15:06:02.081 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@73142fc6
+2019-11-19 15:06:02.082 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@4b61b148
+2019-11-19 15:06:02.082 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@4b61b148
+2019-11-19 15:06:02.082 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@4b61b148
+2019-11-19 15:06:02.083 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@2531a059
+2019-11-19 15:06:02.083 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@2531a059
+2019-11-19 15:06:02.084 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2531a059
+2019-11-19 15:06:02.085 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1a9cca89
+2019-11-19 15:06:02.085 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1a9cca89
+2019-11-19 15:06:02.085 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1a9cca89
+2019-11-19 15:06:02.086 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2fdc3686
+2019-11-19 15:06:02.086 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2fdc3686
+2019-11-19 15:06:02.087 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1b991d90
+2019-11-19 15:06:02.087 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1b991d90
+2019-11-19 15:06:02.088 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@17a3bcf4
+2019-11-19 15:06:02.088 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@17a3bcf4
+2019-11-19 15:06:02.089 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@113726c8
+2019-11-19 15:06:02.089 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@1f9decd8
+2019-11-19 15:06:02.090 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@119268bb
+2019-11-19 15:06:02.090 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@119268bb
+2019-11-19 15:06:02.091 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@7696fa04
+2019-11-19 15:06:02.091 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@7696fa04
+2019-11-19 15:06:02.092 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@306ee8bd
+2019-11-19 15:06:02.092 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@306ee8bd
+2019-11-19 15:06:02.093 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@66199169
+2019-11-19 15:06:02.093 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@66199169
+2019-11-19 15:06:02.093 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@2848f1da
+2019-11-19 15:06:02.094 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@2848f1da
+2019-11-19 15:06:02.094 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@626d2098
+2019-11-19 15:06:02.094 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@626d2098
+2019-11-19 15:06:02.095 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@27863116
+2019-11-19 15:06:02.095 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@27863116
+2019-11-19 15:06:02.096 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3ea340e5
+2019-11-19 15:06:02.096 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3ea340e5
+2019-11-19 15:06:02.097 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6daf4da2
+2019-11-19 15:06:02.098 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6daf4da2
+2019-11-19 15:06:02.099 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@59515a57
+2019-11-19 15:06:02.099 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@59515a57
+2019-11-19 15:06:02.100 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@56b73222
+2019-11-19 15:06:02.100 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@56b73222
+2019-11-19 15:06:02.101 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@38d5163a
+2019-11-19 15:06:02.101 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@38d5163a
+2019-11-19 15:06:02.101 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@38d5163a
+2019-11-19 15:06:02.102 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@38d5410
+2019-11-19 15:06:02.103 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@10fdc60b
+2019-11-19 15:06:02.103 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@10fdc60b
+2019-11-19 15:06:02.103 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@10fdc60b
+2019-11-19 15:06:02.103 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@266ff168
+2019-11-19 15:06:02.104 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@76471923
+2019-11-19 15:06:02.104 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@76471923
+2019-11-19 15:06:02.105 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@282ad49c
+2019-11-19 15:06:02.105 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@282ad49c
+2019-11-19 15:06:02.105 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@5a6e32fd
+2019-11-19 15:06:02.105 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@5a6e32fd
+2019-11-19 15:06:02.106 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@5714f5ec
+2019-11-19 15:06:02.106 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@5714f5ec
+2019-11-19 15:06:02.107 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@62ef2e68
+2019-11-19 15:06:02.107 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@62ef2e68
+2019-11-19 15:06:02.107 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@563ebb0
+2019-11-19 15:06:02.108 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@742eec7a
+2019-11-19 15:06:02.108 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@742eec7a
+2019-11-19 15:06:02.108 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@742eec7a
+2019-11-19 15:06:02.109 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1edcf818
+2019-11-19 15:06:02.109 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1edcf818
+2019-11-19 15:06:02.109 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1edcf818
+2019-11-19 15:06:02.110 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@77f4b941
+2019-11-19 15:06:02.110 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@721f91e9
+2019-11-19 15:06:02.111 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@12f126fe
+2019-11-19 15:06:02.111 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@12f126fe
+2019-11-19 15:06:02.111 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@12f126fe
+2019-11-19 15:06:02.112 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@3ef19fe5
+2019-11-19 15:06:02.112 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@3ef19fe5
+2019-11-19 15:06:02.112 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@3ef19fe5
+2019-11-19 15:06:02.112 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@4e1e5149
+2019-11-19 15:06:02.112 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@361c540c
+2019-11-19 15:06:02.113 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@c352ec6
+2019-11-19 15:06:02.113 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@c352ec6
+2019-11-19 15:06:02.114 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@324549d2
+2019-11-19 15:06:02.114 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@6bc766a9
+2019-11-19 15:06:02.114 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6bc766a9
+2019-11-19 15:06:02.115 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@612c5c5f
+2019-11-19 15:06:02.115 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@612c5c5f
+2019-11-19 15:06:02.116 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@30b659a6
+2019-11-19 15:06:02.116 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@5a8d3ccc
+2019-11-19 15:06:02.117 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@8339402
+2019-11-19 15:06:02.119 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@3a66f54
+2019-11-19 15:06:02.119 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3a66f54
+2019-11-19 15:06:02.119 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@39b5a696
+2019-11-19 15:06:02.119 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@9d9b23b
+2019-11-19 15:06:02.119 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@f084ad1
+2019-11-19 15:06:02.119 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@410c87a0
+2019-11-19 15:06:02.119 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@55190801
+2019-11-19 15:06:02.119 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@111520f3
+2019-11-19 15:06:02.120 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@5c06bec2
+2019-11-19 15:06:02.120 DEBUG 63836 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@79920365
+2019-11-19 15:06:02.177  INFO 63836 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-19 15:06:02.221 DEBUG 63836 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3f2e2816] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1de6f94b]
+2019-11-19 15:06:02.404 DEBUG 63836 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3f2e2816] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4f5fb749]
+2019-11-19 15:06:02.680 DEBUG 63836 --- [restartedMain] org.hibernate.SQL                        : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-19 15:06:03.061 TRACE 63836 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@4f5fb749] for TypeConfiguration
+2019-11-19 15:06:03.063  INFO 63836 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:06:03.108  INFO 63836 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-19 15:06:03.313  INFO 63836 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:06:03.344  WARN 63836 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-19 15:06:03.374  INFO 63836 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-11-19 15:06:03.509  INFO 63836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-19 15:06:03.511  INFO 63836 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Started ExpenseManagerlastApplication in 3.699 seconds (JVM running for 4.693)
+2019-11-19 15:06:26.408  INFO 63836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-19 15:06:26.408  INFO 63836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-19 15:06:26.413  INFO 63836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-11-19 15:06:26.420 DEBUG 63836 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getCategories]
+2019-11-19 15:06:26.505  INFO 63836 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-19 15:06:26.581 DEBUG 63836 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select categorymo0_.category_id as category1_0_, categorymo0_.category as category2_0_ from category categorymo0_
+2019-11-19 15:06:26.590 TRACE 63836 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category1_0_] : [INTEGER]) - [1]
+2019-11-19 15:06:26.594 TRACE 63836 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category2_0_] : [VARCHAR]) - [Food]
+2019-11-19 15:06:26.595 TRACE 63836 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category1_0_] : [INTEGER]) - [2]
+2019-11-19 15:06:26.595 TRACE 63836 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category2_0_] : [VARCHAR]) - [Internet]
+2019-11-19 15:06:26.595 TRACE 63836 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category1_0_] : [INTEGER]) - [3]
+2019-11-19 15:06:26.595 TRACE 63836 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category2_0_] : [VARCHAR]) - [Grocery]
+2019-11-19 15:06:26.595 TRACE 63836 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category1_0_] : [INTEGER]) - [4]
+2019-11-19 15:06:26.595 TRACE 63836 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category2_0_] : [VARCHAR]) - [Phone]
+2019-11-19 15:06:26.596 TRACE 63836 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category1_0_] : [INTEGER]) - [5]
+2019-11-19 15:06:26.596 TRACE 63836 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category2_0_] : [VARCHAR]) - [Electricity]
+2019-11-19 15:06:26.682 DEBUG 63836 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getCategories]
+2019-11-19 15:07:22.359  INFO 63836 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-11-19 15:07:22.362  INFO 63836 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:07:22.362  INFO 63836 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:07:22.363 TRACE 63836 --- [RMI TCP Connection(2)-127.0.0.1] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@4f5fb749] for TypeConfiguration
+2019-11-19 15:07:22.363 DEBUG 63836 --- [RMI TCP Connection(2)-127.0.0.1] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@14979d3c] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4f5fb749]
+2019-11-19 15:07:22.366  INFO 63836 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-11-19 15:07:22.373  INFO 63836 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-11-19 15:49:41.392  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 19200 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-19 15:49:41.394  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-19 15:49:41.433  INFO 19200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 15:49:41.434  INFO 19200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-19 15:49:41.954  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 15:49:41.972  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-11-19 15:49:42.222  INFO 19200 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aeccbbb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 15:49:42.573  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-19 15:49:42.593  INFO 19200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-19 15:49:42.594  INFO 19200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-19 15:49:42.811  INFO 19200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-19 15:49:42.811  INFO 19200 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1377 ms
+2019-11-19 15:49:42.849 DEBUG 19200 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-19 15:49:43.000  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-19 15:49:43.654  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-19 15:49:43.695  INFO 19200 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-19 15:49:43.739  INFO 19200 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-11-19 15:49:43.740  INFO 19200 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-19 15:49:43.892  INFO 19200 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-19 15:49:43.910 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@3337382a
+2019-11-19 15:49:43.910 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@3337382a
+2019-11-19 15:49:43.910 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3337382a
+2019-11-19 15:49:43.911 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@40cf0dfa
+2019-11-19 15:49:43.911 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@2649073a
+2019-11-19 15:49:43.912 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@458e0a76
+2019-11-19 15:49:43.913 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@4141a12b
+2019-11-19 15:49:43.913 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@4141a12b
+2019-11-19 15:49:43.913 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4141a12b
+2019-11-19 15:49:43.914 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@3efcfe89
+2019-11-19 15:49:43.914 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@3efcfe89
+2019-11-19 15:49:43.914 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@3efcfe89
+2019-11-19 15:49:43.914 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@768af9e
+2019-11-19 15:49:43.915 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@768af9e
+2019-11-19 15:49:43.915 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@768af9e
+2019-11-19 15:49:43.915 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@52b16c74
+2019-11-19 15:49:43.916 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@52b16c74
+2019-11-19 15:49:43.916 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@52b16c74
+2019-11-19 15:49:43.916 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@17d670ea
+2019-11-19 15:49:43.917 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@17d670ea
+2019-11-19 15:49:43.917 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@17d670ea
+2019-11-19 15:49:43.917 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@74fe963
+2019-11-19 15:49:43.918 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@74fe963
+2019-11-19 15:49:43.918 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@74fe963
+2019-11-19 15:49:43.919 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@3906e307
+2019-11-19 15:49:43.919 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@3906e307
+2019-11-19 15:49:43.919 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3906e307
+2019-11-19 15:49:43.920 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@23ca2597
+2019-11-19 15:49:43.921 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@23ca2597
+2019-11-19 15:49:43.921 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@74feb3e4
+2019-11-19 15:49:43.922 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@74feb3e4
+2019-11-19 15:49:43.922 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@59f13c71
+2019-11-19 15:49:43.922 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@59f13c71
+2019-11-19 15:49:43.923 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@77c7a31e
+2019-11-19 15:49:43.923 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@64b7dc27
+2019-11-19 15:49:43.924 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@7ddecd6c
+2019-11-19 15:49:43.924 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@7ddecd6c
+2019-11-19 15:49:43.925 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@2ce53ec
+2019-11-19 15:49:43.925 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@2ce53ec
+2019-11-19 15:49:43.926 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@356a47f9
+2019-11-19 15:49:43.927 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@356a47f9
+2019-11-19 15:49:43.928 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@79b654
+2019-11-19 15:49:43.928 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@79b654
+2019-11-19 15:49:43.928 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@7f0bc911
+2019-11-19 15:49:43.929 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@7f0bc911
+2019-11-19 15:49:43.929 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@4673bff2
+2019-11-19 15:49:43.930 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@4673bff2
+2019-11-19 15:49:43.930 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3cf56894
+2019-11-19 15:49:43.931 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3cf56894
+2019-11-19 15:49:43.931 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@18ba37ad
+2019-11-19 15:49:43.931 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@18ba37ad
+2019-11-19 15:49:43.933 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@76cd612f
+2019-11-19 15:49:43.933 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@76cd612f
+2019-11-19 15:49:43.934 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@43faf395
+2019-11-19 15:49:43.934 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@43faf395
+2019-11-19 15:49:43.936 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@709483fb
+2019-11-19 15:49:43.936 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@709483fb
+2019-11-19 15:49:43.937 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@347f9ac7
+2019-11-19 15:49:43.937 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@347f9ac7
+2019-11-19 15:49:43.937 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@347f9ac7
+2019-11-19 15:49:43.938 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@3928a0c
+2019-11-19 15:49:43.939 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@6311a648
+2019-11-19 15:49:43.939 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6311a648
+2019-11-19 15:49:43.939 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6311a648
+2019-11-19 15:49:43.940 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6670269d
+2019-11-19 15:49:43.941 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@28ee86a
+2019-11-19 15:49:43.941 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@28ee86a
+2019-11-19 15:49:43.942 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@26e7722e
+2019-11-19 15:49:43.942 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@26e7722e
+2019-11-19 15:49:43.942 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@6c511f51
+2019-11-19 15:49:43.943 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6c511f51
+2019-11-19 15:49:43.943 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@24f5667b
+2019-11-19 15:49:43.943 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@24f5667b
+2019-11-19 15:49:43.944 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@68cc1702
+2019-11-19 15:49:43.944 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@68cc1702
+2019-11-19 15:49:43.944 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@4bbb7b8c
+2019-11-19 15:49:43.945 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@3739db8b
+2019-11-19 15:49:43.945 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@3739db8b
+2019-11-19 15:49:43.946 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@3739db8b
+2019-11-19 15:49:43.946 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7f5270ea
+2019-11-19 15:49:43.947 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7f5270ea
+2019-11-19 15:49:43.947 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7f5270ea
+2019-11-19 15:49:43.947 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@6a37d8fb
+2019-11-19 15:49:43.948 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@61250ae8
+2019-11-19 15:49:43.948 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@8c2683b
+2019-11-19 15:49:43.949 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@8c2683b
+2019-11-19 15:49:43.949 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@8c2683b
+2019-11-19 15:49:43.949 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@1876f366
+2019-11-19 15:49:43.950 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@1876f366
+2019-11-19 15:49:43.950 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@1876f366
+2019-11-19 15:49:43.950 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@4630433d
+2019-11-19 15:49:43.950 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@6a5b1aaa
+2019-11-19 15:49:43.951 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@753d69d2
+2019-11-19 15:49:43.952 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@753d69d2
+2019-11-19 15:49:43.952 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@3d43e55a
+2019-11-19 15:49:43.953 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@7acea948
+2019-11-19 15:49:43.953 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@7acea948
+2019-11-19 15:49:43.955 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@4561b496
+2019-11-19 15:49:43.955 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4561b496
+2019-11-19 15:49:43.956 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@43c0ce21
+2019-11-19 15:49:43.956 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@524a7ea5
+2019-11-19 15:49:43.957 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@32186bbc
+2019-11-19 15:49:43.959 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@5e4fa83b
+2019-11-19 15:49:43.959 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@5e4fa83b
+2019-11-19 15:49:43.960 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@7dcadedd
+2019-11-19 15:49:43.960 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@5e67bf2f
+2019-11-19 15:49:43.960 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@44ea4b46
+2019-11-19 15:49:43.960 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@112d67c4
+2019-11-19 15:49:43.960 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3aba6f0a
+2019-11-19 15:49:43.960 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@594721b5
+2019-11-19 15:49:43.960 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4f61f1a0
+2019-11-19 15:49:43.961 DEBUG 19200 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@3508accf
+2019-11-19 15:49:44.023  INFO 19200 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-19 15:49:44.071 DEBUG 19200 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5c6ab4fb] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@875cdc3]
+2019-11-19 15:49:44.263 DEBUG 19200 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5c6ab4fb] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@47e34966]
+2019-11-19 15:49:44.547 DEBUG 19200 --- [restartedMain] org.hibernate.SQL                        : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-19 15:49:44.897 TRACE 19200 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@47e34966] for TypeConfiguration
+2019-11-19 15:49:44.901  INFO 19200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:49:44.965  INFO 19200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-19 15:49:45.156  INFO 19200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:49:45.188  WARN 19200 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-19 15:49:45.220  INFO 19200 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-11-19 15:49:45.371  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-19 15:49:45.374  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Started ExpenseManagerlastApplication in 4.239 seconds (JVM running for 5.379)
+2019-11-19 15:50:02.270  INFO 19200 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-19 15:50:02.270  INFO 19200 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-19 15:50:02.310  INFO 19200 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 40 ms
+2019-11-19 15:50:02.318 DEBUG 19200 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getCategories]
+2019-11-19 15:50:02.422  INFO 19200 --- [http-nio-8080-exec-4] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-19 15:50:02.475 DEBUG 19200 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select categorymo0_.category_id as category1_0_, categorymo0_.category as category2_0_ from category categorymo0_
+2019-11-19 15:50:02.483 TRACE 19200 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category1_0_] : [INTEGER]) - [1]
+2019-11-19 15:50:02.487 TRACE 19200 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category2_0_] : [VARCHAR]) - [Food]
+2019-11-19 15:50:02.487 TRACE 19200 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category1_0_] : [INTEGER]) - [2]
+2019-11-19 15:50:02.488 TRACE 19200 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category2_0_] : [VARCHAR]) - [Internet]
+2019-11-19 15:50:02.488 TRACE 19200 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category1_0_] : [INTEGER]) - [3]
+2019-11-19 15:50:02.488 TRACE 19200 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category2_0_] : [VARCHAR]) - [Grocery]
+2019-11-19 15:50:02.488 TRACE 19200 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category1_0_] : [INTEGER]) - [4]
+2019-11-19 15:50:02.488 TRACE 19200 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category2_0_] : [VARCHAR]) - [Phone]
+2019-11-19 15:50:02.488 TRACE 19200 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category1_0_] : [INTEGER]) - [5]
+2019-11-19 15:50:02.489 TRACE 19200 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category2_0_] : [VARCHAR]) - [Electricity]
+2019-11-19 15:50:02.567 DEBUG 19200 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getCategories]
+2019-11-19 15:50:39.361 DEBUG 19200 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/addExpense]
+2019-11-19 15:50:39.429 DEBUG 19200 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into expense (category, create_date, expense_amount, expense_name, user_id) values (?, ?, ?, ?, ?)
+2019-11-19 15:50:39.430 TRACE 19200 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Phone]
+2019-11-19 15:50:39.430 TRACE 19200 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [Sat Aug 10 05:30:00 IST 2019]
+2019-11-19 15:50:39.431 TRACE 19200 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DOUBLE] - [19912.0]
+2019-11-19 15:50:39.431 TRACE 19200 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [yesitsadded]
+2019-11-19 15:50:39.432 TRACE 19200 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [INTEGER] - [null]
+2019-11-19 15:50:39.487 DEBUG 19200 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/addExpense;payload= {
+            "expenseName": "yesitsadded",
+            "expenseAmount": 19912.0,
+            "createDate": "2019-08-10",
+            "category": "Phone"
+}]
+2019-11-19 15:53:47.002  INFO 19200 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:53:47.003  INFO 19200 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:53:47.003 TRACE 19200 --- [Thread-5] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@47e34966] for TypeConfiguration
+2019-11-19 15:53:47.003 DEBUG 19200 --- [Thread-5] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@45c62f07] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@47e34966]
+2019-11-19 15:53:47.009  INFO 19200 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-11-19 15:53:47.015  INFO 19200 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-11-19 15:53:47.262  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 19200 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-19 15:53:47.263  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-19 15:53:47.479  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 15:53:47.483  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-11-19 15:53:47.523  INFO 19200 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aeccbbb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 15:53:47.798  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-19 15:53:47.799  INFO 19200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-19 15:53:47.799  INFO 19200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-19 15:53:47.940  INFO 19200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-19 15:53:47.940  INFO 19200 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 676 ms
+2019-11-19 15:53:47.953 DEBUG 19200 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-19 15:53:47.982  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-11-19 15:53:47.998  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-11-19 15:53:48.005  INFO 19200 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-19 15:53:48.024  INFO 19200 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-19 15:53:48.115 DEBUG 19200 --- [restartedMain] org.hibernate.SQL                        : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-19 15:53:48.441  INFO 19200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:53:48.467  INFO 19200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-19 15:53:48.550  INFO 19200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:53:48.556  WARN 19200 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-19 15:53:48.569  INFO 19200 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-11-19 15:53:48.630  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-19 15:53:48.630  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Started ExpenseManagerlastApplication in 1.392 seconds (JVM running for 248.635)
+2019-11-19 15:53:48.632  INFO 19200 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-19 15:55:42.595  INFO 19200 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-19 15:55:42.596  INFO 19200 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-19 15:55:42.602  INFO 19200 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-11-19 15:55:42.602 DEBUG 19200 --- [http-nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getCategories]
+2019-11-19 15:55:42.610  INFO 19200 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-19 15:55:42.612 DEBUG 19200 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select categorymo0_.category_id as category1_0_, categorymo0_.category as category2_0_ from category categorymo0_
+2019-11-19 15:55:42.619 DEBUG 19200 --- [http-nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getCategories]
+2019-11-19 15:58:30.832  INFO 19200 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:58:30.833  INFO 19200 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:58:30.834  INFO 19200 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-11-19 15:58:30.845  INFO 19200 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-11-19 15:58:31.066  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 19200 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-19 15:58:31.066  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-19 15:58:31.238  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 15:58:31.241  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2019-11-19 15:58:31.275  INFO 19200 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aeccbbb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 15:58:31.514  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-19 15:58:31.515  INFO 19200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-19 15:58:31.515  INFO 19200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-19 15:58:31.631  INFO 19200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-19 15:58:31.631  INFO 19200 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 564 ms
+2019-11-19 15:58:31.644 DEBUG 19200 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-19 15:58:31.668  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2019-11-19 15:58:31.682  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2019-11-19 15:58:31.689  INFO 19200 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-19 15:58:31.706  INFO 19200 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-19 15:58:31.819 DEBUG 19200 --- [restartedMain] org.hibernate.SQL                        : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-19 15:58:32.137  INFO 19200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:58:32.173  INFO 19200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-19 15:58:32.181  WARN 19200 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\ExpenseManagerLast\ExpenseManager-master\target\classes\com\app\ExpenseManagerLast\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.app.ExpenseManagerLast.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete ClassBodyDeclarations
+
+2019-11-19 15:58:32.181  INFO 19200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:58:32.181  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2019-11-19 15:58:32.203  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2019-11-19 15:58:32.203  INFO 19200 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-11-19 15:58:32.214  INFO 19200 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-19 15:58:32.232 ERROR 19200 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\ExpenseManagerLast\ExpenseManager-master\target\classes\com\app\ExpenseManagerLast\controller\UserController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.app.ExpenseManagerLast.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete ClassBodyDeclarations
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1303) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1197) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:847) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at com.app.ExpenseManagerLast.ExpenseManagerlastApplication.main(ExpenseManagerlastApplication.java:13) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_221]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.app.ExpenseManagerLast.controller.UserController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete ClassBodyDeclarations
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:184) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1295) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete ClassBodyDeclarations
+
+	at com.app.ExpenseManagerLast.controller.UserController.<init>(UserController.java:33) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_221]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_221]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:172) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	... 24 common frames omitted
+
+2019-11-19 15:58:38.946  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 19200 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-19 15:58:38.947  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-19 15:58:39.105  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 15:58:39.108  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2019-11-19 15:58:39.136  INFO 19200 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aeccbbb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 15:58:39.407  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-19 15:58:39.408  INFO 19200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-19 15:58:39.408  INFO 19200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-19 15:58:39.537  INFO 19200 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-11-19 15:58:39.537  INFO 19200 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 588 ms
+2019-11-19 15:58:39.549 DEBUG 19200 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-19 15:58:39.572  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2019-11-19 15:58:39.585  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2019-11-19 15:58:39.590  INFO 19200 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-19 15:58:39.597  INFO 19200 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-19 15:58:39.653 DEBUG 19200 --- [restartedMain] org.hibernate.SQL                        : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-19 15:58:40.176  INFO 19200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:58:40.203  INFO 19200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-19 15:58:40.286  INFO 19200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:58:40.291  WARN 19200 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-19 15:58:40.301  INFO 19200 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-11-19 15:58:40.361  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-19 15:58:40.362  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Started ExpenseManagerlastApplication in 1.465 seconds (JVM running for 540.367)
+2019-11-19 15:58:40.363  INFO 19200 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-19 15:59:08.196  INFO 19200 --- [Thread-17] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:59:08.205  INFO 19200 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:59:08.207  INFO 19200 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2019-11-19 15:59:08.227  INFO 19200 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2019-11-19 15:59:08.450  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 19200 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-19 15:59:08.450  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-19 15:59:08.599  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 15:59:08.602  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2019-11-19 15:59:08.632  INFO 19200 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aeccbbb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 15:59:08.901  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-19 15:59:08.902  INFO 19200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-19 15:59:08.902  INFO 19200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-19 15:59:09.022  INFO 19200 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-11-19 15:59:09.022  INFO 19200 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 571 ms
+2019-11-19 15:59:09.033 DEBUG 19200 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-19 15:59:09.055  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2019-11-19 15:59:09.068  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2019-11-19 15:59:09.075  INFO 19200 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-19 15:59:09.092  INFO 19200 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-19 15:59:09.145 DEBUG 19200 --- [restartedMain] org.hibernate.SQL                        : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-19 15:59:09.399  INFO 19200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:59:09.433  INFO 19200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-19 15:59:09.514  INFO 19200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:59:09.519  WARN 19200 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-19 15:59:09.528  INFO 19200 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-11-19 15:59:09.576  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-19 15:59:09.576  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Started ExpenseManagerlastApplication in 1.144 seconds (JVM running for 569.581)
+2019-11-19 15:59:09.578  INFO 19200 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-19 15:59:18.135  INFO 19200 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:59:18.137  INFO 19200 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:59:18.138  INFO 19200 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2019-11-19 15:59:18.148  INFO 19200 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2019-11-19 15:59:18.336  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 19200 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-19 15:59:18.337  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-19 15:59:18.479  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 15:59:18.482  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2019-11-19 15:59:18.511  INFO 19200 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aeccbbb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 15:59:18.773  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-19 15:59:18.774  INFO 19200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-19 15:59:18.774  INFO 19200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-19 15:59:18.902  INFO 19200 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-11-19 15:59:18.902  INFO 19200 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 564 ms
+2019-11-19 15:59:18.917 DEBUG 19200 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-19 15:59:18.942  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2019-11-19 15:59:18.956  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2019-11-19 15:59:18.962  INFO 19200 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-19 15:59:18.981  INFO 19200 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-19 15:59:19.033 DEBUG 19200 --- [restartedMain] org.hibernate.SQL                        : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-19 15:59:19.374  INFO 19200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:59:19.403  INFO 19200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-19 15:59:19.486  INFO 19200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:59:19.491  WARN 19200 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-19 15:59:19.501  INFO 19200 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-11-19 15:59:19.545  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-19 15:59:19.546  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Started ExpenseManagerlastApplication in 1.228 seconds (JVM running for 579.551)
+2019-11-19 15:59:19.547  INFO 19200 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-19 15:59:38.257  INFO 19200 --- [Thread-32] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:59:38.258  INFO 19200 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:59:38.258  INFO 19200 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2019-11-19 15:59:38.268  INFO 19200 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2019-11-19 15:59:38.462  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 19200 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-19 15:59:38.463  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-19 15:59:38.604  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 15:59:38.608  INFO 19200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-11-19 15:59:38.635  INFO 19200 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aeccbbb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 15:59:38.899  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-19 15:59:38.900  INFO 19200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-19 15:59:38.900  INFO 19200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-19 15:59:39.030  INFO 19200 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-11-19 15:59:39.030  INFO 19200 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 566 ms
+2019-11-19 15:59:39.052 DEBUG 19200 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-19 15:59:39.086  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2019-11-19 15:59:39.100  INFO 19200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2019-11-19 15:59:39.108  INFO 19200 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-19 15:59:39.132  INFO 19200 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-19 15:59:39.266 DEBUG 19200 --- [restartedMain] org.hibernate.SQL                        : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-19 15:59:39.565  INFO 19200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 15:59:39.576  INFO 19200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-19 15:59:39.642  INFO 19200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:59:39.647  WARN 19200 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-19 15:59:39.658  INFO 19200 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-11-19 15:59:39.704  INFO 19200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-19 15:59:39.705  INFO 19200 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Started ExpenseManagerlastApplication in 1.261 seconds (JVM running for 599.71)
+2019-11-19 15:59:39.706  INFO 19200 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-19 16:00:53.731  INFO 19200 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-11-19 16:00:53.734  INFO 19200 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 16:00:53.734  INFO 19200 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-19 16:00:53.735  INFO 19200 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2019-11-19 16:00:53.740  INFO 19200 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
