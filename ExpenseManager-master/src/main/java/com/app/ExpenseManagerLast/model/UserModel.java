@@ -5,6 +5,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -16,7 +17,7 @@ import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name = "user")
-public class userModel {
+public class UserModel {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,14 +37,14 @@ public class userModel {
 	@Transient
 	private String confirmPassword;
 
-	@OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "user",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
 	private List<ExpenseModel> expenses;
 
-	public userModel() {
+	public UserModel() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public userModel(int userId, String firstName, String lastName, String emailId, String password,
+	public UserModel(int userId, String firstName, String lastName, String emailId, String password,
 			String confirmPassword, List<ExpenseModel> expenses) {
 		this.userId = userId;
 		this.firstName = firstName;
@@ -118,7 +119,7 @@ public class userModel {
 
 	@Override
 	public String toString() {
-		return "userModel [firstName=" + firstName + ", lastName=" + lastName + ", emailId=" + emailId + ", password="
+		return "UserModel [firstName=" + firstName + ", lastName=" + lastName + ", emailId=" + emailId + ", password="
 				+ password + ", confirmPassword=" + confirmPassword + "]";
 	}
 

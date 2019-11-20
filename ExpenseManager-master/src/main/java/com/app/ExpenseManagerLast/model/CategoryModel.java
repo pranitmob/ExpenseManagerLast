@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "category")
-public class categoryModel {
+public class CategoryModel {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,11 +17,11 @@ public class categoryModel {
 
 	private String category;
 
-	public categoryModel() {
+	public CategoryModel() {
 
 	}
 
-	public categoryModel(int categoryId, String category) {
+	public CategoryModel(int categoryId, String category) {
 		super();
 		this.categoryId = categoryId;
 		this.category = category;
@@ -51,7 +51,7 @@ public class categoryModel {
 
 	@Override
 	public String toString() {
-		return "categoryModel [categoryId=" + categoryId + ", category=" + category + "]";
+		return "CategoryModel [categoryId=" + categoryId + ", category=" + category + "]";
 	}
 	
 	// convience methods

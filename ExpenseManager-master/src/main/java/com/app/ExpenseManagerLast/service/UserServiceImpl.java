@@ -5,7 +5,9 @@ import org.springframework.stereotype.Service;
 
 import com.app.ExpenseManagerLast.Exception.UserNotFoundException;
 import com.app.ExpenseManagerLast.dao.IUserDao;
-import com.app.ExpenseManagerLast.model.userModel;
+import com.app.ExpenseManagerLast.dto.UserDetails;
+import com.app.ExpenseManagerLast.model.UserModel;
+import com.app.ExpenseManagerLast.repository.UserRepository;
 
 /**
  * @author Pranit User service Implementation Class
@@ -15,21 +17,38 @@ public class UserServiceImpl implements IUserService {
 
 	@Autowired
 	private IUserDao userDao;
-
+	
+	@Autowired
+	private UserRepository userRepository;
+	
 	@Override
-	public String resgiserUser(userModel user) {
+	public UserModel loginUser(String email, String password) {
 		// TODO Auto-generated method stub
-		return userDao.registerUser(user);
-	}
-
-	@Override
-	public userModel loginUser(String email, String password) {
-		// TODO Auto-generated method stub
-		userModel user = userDao.loginUser(email, password);
+		UserModel user = userDao.loginUser(email, password);
 		if(user==null) {
 			throw new UserNotFoundException("please register before login");
 		}
 		return user;
+	}
+
+	@Override
+	public Integer registerUserJPA(UserDetails user) {
+		// TODO Auto-generated method stub
+			
+		UserModel userModel = new UserModel();
+		
+		userModel.setFirstName(user.getFirstName());
+		userModel.setLastName(user.getLastName());
+		userModel.setEmailId(user.getEmail());
+		userModel.setPassword(user.getPassword());
+		userModel.setConfirmPassword(user.getConfirmPassword());
+		
+		UserModel userDb = userRepository.save(userModel);
+		
+		System.out.println("User Registered with id"+userDb.getUserId());
+		
+		return userDb.getUserId();
+		
 	}
 
 }

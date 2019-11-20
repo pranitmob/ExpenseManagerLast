@@ -1,24 +1,31 @@
 package com.app.ExpenseManagerLast.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.app.ExpenseManagerLast.dao.ICategoryDao;
-import com.app.ExpenseManagerLast.model.categoryModel;
+import com.app.ExpenseManagerLast.dto.CategoryDetails;
+import com.app.ExpenseManagerLast.model.CategoryModel;
+import com.app.ExpenseManagerLast.repository.CategoryRepository;
 
 /**
- * @author Pranit Category service Imple
+ * Category service 
  */
 @Service
 public class CategoryServiceImpl implements ICategoryService {
-
+	
 	@Autowired
-	private ICategoryDao dao;
-
+	private CategoryRepository categoryRepository;
+	
 	@Override
-	public List<categoryModel> getAllCategories() {
+	public List<CategoryModel> getAllCategories() {
 		// TODO Auto-generated method stub
-		return dao.getAllCategories();
+		List<CategoryModel> categories = new ArrayList<>();
+		categories=categoryRepository.findAll();
+		return categories;
 	}
+
+
+
 
 }

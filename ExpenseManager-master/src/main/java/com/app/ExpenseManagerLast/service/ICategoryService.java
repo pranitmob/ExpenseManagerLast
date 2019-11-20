@@ -2,10 +2,11 @@ package com.app.ExpenseManagerLast.service;
 
 import java.util.List;
 
-import com.app.ExpenseManagerLast.model.categoryModel;
+import com.app.ExpenseManagerLast.dto.CategoryDetails;
+import com.app.ExpenseManagerLast.model.CategoryModel;
 
 public interface ICategoryService {
 
-	public List<categoryModel> getAllCategories();
+	public List<CategoryModel> getAllCategories();
 
 }

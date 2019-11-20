@@ -1,11 +1,13 @@
 package com.app.ExpenseManagerLast.service;
 
-import com.app.ExpenseManagerLast.model.userModel;
+import com.app.ExpenseManagerLast.dto.UserDetails;
+import com.app.ExpenseManagerLast.model.UserModel;
 
 public interface IUserService {
 
-	public String resgiserUser(userModel user);
+	//String resgiserUser(UserModel user);
 
-	public userModel loginUser(String email, String password);
-
+	UserModel loginUser(String email, String password);
+	
+	Integer registerUserJPA(UserDetails user);
 }

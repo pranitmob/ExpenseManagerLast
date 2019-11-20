@@ -29,7 +29,7 @@ public class ExpenseModel {
 	@NotEmpty(message = "expense name cannot be empty")
 	private String expenseName;
 
-	@Min(1)
+	@Min(2)
 	private double expenseAmount;
 
 	@Past(message = "date must be past")
@@ -43,13 +43,13 @@ public class ExpenseModel {
 	@ManyToOne
 	@JoinColumn(name = "user_id")
 	@JsonIgnore
-	private userModel user;
+	private UserModel user;
 	
 	public ExpenseModel() {
 
 	}
 		
-	public ExpenseModel(int expenseId,String expenseName,double expenseAmount,Date createDate,String category, userModel user) {
+	public ExpenseModel(int expenseId,String expenseName,double expenseAmount,Date createDate,String category, UserModel user) {
 		super();
 		this.expenseId = expenseId;
 		this.expenseName = expenseName;

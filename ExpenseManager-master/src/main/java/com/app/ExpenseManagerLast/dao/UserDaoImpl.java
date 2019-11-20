@@ -12,7 +12,7 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
 import org.springframework.stereotype.Repository;
-import com.app.ExpenseManagerLast.model.userModel;
+import com.app.ExpenseManagerLast.model.UserModel;
 
 
 @Repository
@@ -22,27 +22,20 @@ public class UserDaoImpl implements IUserDao {
 	@PersistenceContext
 	private EntityManager entitytManager;
 	
-	@Override
-	public String registerUser(userModel user) {
-		// TODO Auto-generated method stub
-		entitytManager.persist(user);
-		return"Registered";
-	}
 
-	@Override
-	public userModel loginUser(String email, String password) {
+	public UserModel loginUser(String email, String password) {
 		// TODO Auto-generated method stub
 		CriteriaBuilder cm =entitytManager.getCriteriaBuilder();
-		CriteriaQuery<userModel> cq = cm.createQuery(userModel.class);
-		Root<userModel> root = cq.from(userModel.class); 
+		CriteriaQuery<UserModel> cq = cm.createQuery(UserModel.class);
+		Root<UserModel> root = cq.from(UserModel.class); 
 		List<Predicate> predicates = new ArrayList<Predicate>();
 		predicates.add(cm.equal(root.get("emailId"),email));
 		predicates.add(cm.equal(root.get("password"), password));
 		cq.select(root).where(predicates.toArray(new Predicate[] {}));
-		userModel user = entitytManager.createQuery(cq).getSingleResult();
+		UserModel user = entitytManager.createQuery(cq).getSingleResult();
 		
-		//String jpql = "select u from userModel u where u.emailId=:em and u.password=:pwd";
-		//userModel user = entitytManager.createQuery(jpql, userModel.class).setParameter("em", email).setParameter("pwd", password).getSingleResult();
+		//String jpql = "select u from UserModel u where u.emailId=:em and u.password=:pwd";
+		//UserModel user = entitytManager.createQuery(jpql, UserModel.class).setParameter("em", email).setParameter("pwd", password).getSingleResult();
 		return user;
 	}
 	

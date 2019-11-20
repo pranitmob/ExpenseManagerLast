@@ -13,7 +13,7 @@ import javax.transaction.Transactional;
 import org.springframework.stereotype.Repository;
 
 import com.app.ExpenseManagerLast.model.ExpenseModel;
-import com.app.ExpenseManagerLast.model.userModel;
+import com.app.ExpenseManagerLast.model.UserModel;
 
 @Repository
 @Transactional
