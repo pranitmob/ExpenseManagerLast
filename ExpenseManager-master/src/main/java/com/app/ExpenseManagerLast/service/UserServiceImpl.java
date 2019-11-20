@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.ExpenseManagerLast.Exception.UserNotFoundException;
-import com.app.ExpenseManagerLast.dao.IUserDao;
 import com.app.ExpenseManagerLast.dto.UserDetails;
 import com.app.ExpenseManagerLast.model.UserModel;
 import com.app.ExpenseManagerLast.repository.UserRepository;
@@ -14,9 +13,6 @@ import com.app.ExpenseManagerLast.repository.UserRepository;
  */
 @Service
 public class UserServiceImpl implements IUserService {
-
-	@Autowired
-	private IUserDao userDao;
 	
 	@Autowired
 	private UserRepository userRepository;
@@ -24,7 +20,7 @@ public class UserServiceImpl implements IUserService {
 	@Override
 	public UserModel loginUser(String email, String password) {
 		// TODO Auto-generated method stub
-		UserModel user = userDao.loginUser(email, password);
+		UserModel user = userRepository.findByemailIdAndPassword(email, password);
 		if(user==null) {
 			throw new UserNotFoundException("please register before login");
 		}
@@ -34,17 +30,13 @@ public class UserServiceImpl implements IUserService {
 	@Override
 	public Integer registerUserJPA(UserDetails user) {
 		// TODO Auto-generated method stub
-			
 		UserModel userModel = new UserModel();
-		
 		userModel.setFirstName(user.getFirstName());
 		userModel.setLastName(user.getLastName());
 		userModel.setEmailId(user.getEmail());
 		userModel.setPassword(user.getPassword());
 		userModel.setConfirmPassword(user.getConfirmPassword());
-		
 		UserModel userDb = userRepository.save(userModel);
-		
 		System.out.println("User Registered with id"+userDb.getUserId());
 		
 		return userDb.getUserId();

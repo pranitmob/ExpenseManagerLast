@@ -48,11 +48,14 @@ public class UserController {
 	@PostMapping("/register")
 	public ResponseEntity<?> registerUser(@RequestBody UserDetails user) {
 		try {
-			if (user.getPassword().equals(user.getConfirmPassword())) {
+			if (user.getPassword().toString().equals(user.getConfirmPassword().toString())) {
+				System.out.println("pass"+user.getPassword());
+				System.out.println("confirm password"+user.getConfirmPassword());
 				return new ResponseEntity<Integer>(userService.registerUserJPA(user), HttpStatus.OK);
 			}
 			return new ResponseEntity<String>("password dosen't match", HttpStatus.INTERNAL_SERVER_ERROR);
 		} catch (Exception e) {
+			e.printStackTrace();
 			return new ResponseEntity<String>("Registeration failed", HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}

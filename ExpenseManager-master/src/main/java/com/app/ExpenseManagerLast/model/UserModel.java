@@ -37,7 +37,7 @@ public class UserModel {
 	@Transient
 	private String confirmPassword;
 
-	@OneToMany(mappedBy = "user",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
 	private List<ExpenseModel> expenses;
 
 	public UserModel() {
