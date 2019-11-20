@@ -32,7 +32,6 @@ import io.swagger.models.auth.In;
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/user")
-
 public class UserController {
 
 	private static final Logger logger = LogManager.getLogger(UserController.class);
