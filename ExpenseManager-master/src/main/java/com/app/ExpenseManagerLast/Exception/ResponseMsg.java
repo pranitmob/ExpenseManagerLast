@@ -11,6 +11,8 @@ public class ResponseMsg {
 	public String getResponseMsg() {
 		return responseMsg;
 	}
+	
+	
 
 	public void setResponseMsg(String responseMsg) {
 		this.responseMsg = responseMsg;
