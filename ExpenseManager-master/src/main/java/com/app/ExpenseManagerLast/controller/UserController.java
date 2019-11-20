@@ -1,6 +1,7 @@
 package com.app.ExpenseManagerLast.controller;
 
 import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.apache.logging.log4j.LogManager;
@@ -16,15 +17,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.app.ExpenseManagerLast.Exception.UserNotFoundException;
+import com.app.ExpenseManagerLast.dto.ExpenseDetails;
 import com.app.ExpenseManagerLast.dto.UserDetails;
-import com.app.ExpenseManagerLast.model.ExpenseModel;
 import com.app.ExpenseManagerLast.model.CategoryModel;
-import com.app.ExpenseManagerLast.model.UserModel;
 import com.app.ExpenseManagerLast.service.ICategoryService;
 import com.app.ExpenseManagerLast.service.IExpenseService;
 import com.app.ExpenseManagerLast.service.IUserService;
-
-import io.swagger.models.auth.In;
 
 /**
  * @author Pranit
@@ -34,7 +32,7 @@ import io.swagger.models.auth.In;
 @RequestMapping("/user")
 public class UserController {
 
-	private static final Logger logger = LogManager.getLogger(UserController.class);
+	private static final Logger log = LogManager.getLogger(UserController.class);
 	
 	@Autowired
 	private IUserService userService;
@@ -51,6 +49,7 @@ public class UserController {
 			if (user.getPassword().toString().equals(user.getConfirmPassword().toString())) {
 				System.out.println("pass"+user.getPassword());
 				System.out.println("confirm password"+user.getConfirmPassword());
+				log.info("User Registeration");
 				return new ResponseEntity<Integer>(userService.registerUserJPA(user), HttpStatus.OK);
 			}
 			return new ResponseEntity<String>("password dosen't match", HttpStatus.INTERNAL_SERVER_ERROR);
@@ -61,18 +60,19 @@ public class UserController {
 	}
 
 	@PostMapping("/loginUser")
-	public ResponseEntity<?> loginUser(@RequestBody UserModel user, HttpSession hs) {
+	public ResponseEntity<?> loginUser(@RequestBody UserDetails user, HttpSession hs) {
 		try {
-			UserModel validUser = userService.loginUser(user.getEmailId(), user.getPassword());
+			UserDetails validUser = userService.loginUser(user.getEmail(), user.getPassword());
 			hs.setAttribute("validUser", validUser);
-			return new ResponseEntity<UserModel>(validUser, HttpStatus.OK);
+			log.info("user Login");
+			return new ResponseEntity<UserDetails>(validUser, HttpStatus.OK);
 		} catch (Exception e) {
 			throw new UserNotFoundException("user not found");
 		}
 	}
 
 	@PostMapping("/addExpense")
-	public ResponseEntity<String> addExpense(@RequestBody ExpenseModel expense) {
+	public ResponseEntity<String> addExpense(@RequestBody ExpenseDetails expense) {
 		try {
 			return new ResponseEntity<String>(expenseService.addExpense(expense), HttpStatus.OK);
 		} catch (Exception e) {
@@ -102,12 +102,6 @@ public class UserController {
 			return new ResponseEntity<String>("Cannot fetch Monthly expenses", HttpStatus.SERVICE_UNAVAILABLE);
 		}
 
-	}
-	
-	@PostMapping(path = "/resgisterWithJPA")
-	public Integer reisterUserWithRepo(@RequestBody UserDetails user) {
-		
-		return userService.registerUserJPA(user);
 	}
 }
 

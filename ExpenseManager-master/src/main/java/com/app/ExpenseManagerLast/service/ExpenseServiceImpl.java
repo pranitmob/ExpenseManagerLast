@@ -6,7 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.ExpenseManagerLast.dao.IExpenseDao;
-import com.app.ExpenseManagerLast.model.ExpenseModel;
+import com.app.ExpenseManagerLast.dto.ExpenseDetails;
+
 
 /**
  * @author Pranit
@@ -19,7 +20,7 @@ public class ExpenseServiceImpl implements IExpenseService {
 	private IExpenseDao dao;
 
 	@Override
-	public String addExpense(ExpenseModel expense) {
+	public String addExpense(ExpenseDetails expense) {
 		// TODO Auto-generated method stub
 		return dao.addExpense(expense);
 	}

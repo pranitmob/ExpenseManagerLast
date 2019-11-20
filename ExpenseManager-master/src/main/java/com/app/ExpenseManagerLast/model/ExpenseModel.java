@@ -40,6 +40,8 @@ public class ExpenseModel {
 	@NotEmpty(message = "category cannot be empty")
 	private String category;
 	
+	private String description;
+	
 	@ManyToOne
 	@JoinColumn(name = "user_id")
 	@JsonIgnore
@@ -49,15 +51,35 @@ public class ExpenseModel {
 
 	}
 		
-	public ExpenseModel(int expenseId,String expenseName,double expenseAmount,Date createDate,String category, UserModel user) {
+	public ExpenseModel( String expenseName, double expenseAmount, Date createDate, String category, String description, UserModel user) {
 		super();
-		this.expenseId = expenseId;
 		this.expenseName = expenseName;
 		this.expenseAmount = expenseAmount;
 		this.createDate = createDate;
 		this.category = category;
+		this.description = description;
 		this.user = user;
 	}
+
+
+
+	@Column(name = "description")
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public UserModel getUser() {
+		return user;
+	}
+
+	public void setUser(UserModel user) {
+		this.user = user;
+	}
+
 
 
 	@Column(name = "expense_id")
