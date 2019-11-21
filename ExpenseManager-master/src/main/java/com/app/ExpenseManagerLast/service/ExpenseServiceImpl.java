@@ -26,9 +26,16 @@ public class ExpenseServiceImpl implements IExpenseService {
 	}
 
 	@Override
-	public List<Object> getListOfExpenses() {
+	public List<Object[]> getListOfExpenses() {
 		// TODO Auto-generated method stub
 		return dao.getListOfExpenses();
 	}
 
+	@Override
+	public Double sumOfallExpense() {
+		// TODO Auto-generated method stub
+		return dao.getSumOfAllExpenses();
+	}
+	
+	
 }

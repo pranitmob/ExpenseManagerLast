@@ -9,5 +9,7 @@ public interface IExpenseDao {
 	
 	String addExpense(ExpenseDetails expense);
 	
-	List<Object> getListOfExpenses();
+	List<Object[]> getListOfExpenses();
+	
+	Double getSumOfAllExpenses();
 }

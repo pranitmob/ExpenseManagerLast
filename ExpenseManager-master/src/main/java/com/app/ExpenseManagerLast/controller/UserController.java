@@ -67,6 +67,7 @@ public class UserController {
 			log.info("user Login");
 			return new ResponseEntity<UserDetails>(validUser, HttpStatus.OK);
 		} catch (Exception e) {
+			e.printStackTrace();
 			throw new UserNotFoundException("user not found");
 		}
 	}
@@ -96,12 +97,27 @@ public class UserController {
 	@GetMapping("/getMonthlyExpenses")
 	public ResponseEntity<?> getListOfExpenses() {
 		try {
-			return new ResponseEntity<List<Object>>(expenseService.getListOfExpenses(), HttpStatus.OK);
+			return new ResponseEntity<List<Object[]>>(expenseService.getListOfExpenses(), HttpStatus.OK);
 		} catch (Exception e) {
 			// TODO: handle exception
+			e.printStackTrace();
 			return new ResponseEntity<String>("Cannot fetch Monthly expenses", HttpStatus.SERVICE_UNAVAILABLE);
 		}
 
 	}
+	
+	
+	@GetMapping("/getsum")
+	public ResponseEntity<?> getSumOfAllExpenses() {
+		try {
+			return new ResponseEntity<Double>(expenseService.sumOfallExpense(), HttpStatus.OK);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			return new ResponseEntity<String>("Cannot fetch Monthly expenses", HttpStatus.SERVICE_UNAVAILABLE);
+		}
+
+	}
+	
 }
 

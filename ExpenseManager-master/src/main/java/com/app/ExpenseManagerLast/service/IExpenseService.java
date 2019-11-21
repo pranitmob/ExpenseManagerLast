@@ -8,5 +8,7 @@ public interface IExpenseService {
 
 	String addExpense(ExpenseDetails expense);
 
-	List<Object> getListOfExpenses();
+	List<Object[]> getListOfExpenses();
+	
+	Double sumOfallExpense();
 }
