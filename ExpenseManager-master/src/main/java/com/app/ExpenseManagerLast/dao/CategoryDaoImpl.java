@@ -21,7 +21,7 @@ public class CategoryDaoImpl implements ICategoryDao {
 		List<Object> obj = new ArrayList<Object>();
 		obj.addAll(c);
 
-		return null;
+		return obj;
 	}
 
 }
