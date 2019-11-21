@@ -20,8 +20,7 @@ public class CategoryDaoImpl implements ICategoryDao {
 		List<CategoryModel> c = catRepo.findAll();
 		List<Object> obj = new ArrayList<Object>();
 		obj.addAll(c);
-		
-		
+
 		return null;
 	}
 
