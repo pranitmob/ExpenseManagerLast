@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.app.ExpenseManagerLast.Exception.UserNotFoundException;
 import com.app.ExpenseManagerLast.dto.ExpenseDetails;
 import com.app.ExpenseManagerLast.dto.UserDetails;
-import com.app.ExpenseManagerLast.model.CategoryModel;
 import com.app.ExpenseManagerLast.service.ICategoryService;
 import com.app.ExpenseManagerLast.service.IExpenseService;
 import com.app.ExpenseManagerLast.service.IUserService;
@@ -87,7 +86,7 @@ public class UserController {
 	@GetMapping("/getCategories")
 	public ResponseEntity<?> getAllCategories() {
 		try {
-			return new ResponseEntity<List<CategoryModel>>(categoryService.getAllCategories(), HttpStatus.OK);
+			return new ResponseEntity<List<Object>>(categoryService.getAllCategories(), HttpStatus.OK);
 		} catch (Exception e) {
 			// TODO: handle exception
 			return new ResponseEntity<String>("Categories fecth failed", HttpStatus.INTERNAL_SERVER_ERROR);

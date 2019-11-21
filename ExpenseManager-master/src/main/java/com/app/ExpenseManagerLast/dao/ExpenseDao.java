@@ -21,11 +21,11 @@ import com.app.ExpenseManagerLast.repository.ExpenseRepository;
 
 @Repository
 @Transactional
-public class ExpenseDao implements IExpenseDao{
-	
+public class ExpenseDao implements IExpenseDao {
+
 	@PersistenceContext
 	private EntityManager entitytManager;
-	
+
 	@Autowired
 	private ExpenseRepository expenseRepo;
 
@@ -38,35 +38,27 @@ public class ExpenseDao implements IExpenseDao{
 		expense.setExpenseAmount(expenseDto.getAmount());
 		expense.setCategory(expenseDto.getCategory());
 		expense.setDescription(expenseDto.getDescription());
-		
+
 		ExpenseModel expenseDb = expenseRepo.save(expense);
-		return "Expense added with name"+expenseDb.getExpenseName();
+		return "Expense added with name" + expenseDb.getExpenseName();
 	}
 
 	@Override
 	public List<Object[]> getListOfExpenses() {
 		// TODO Auto-generated method stub
-		
 		CriteriaBuilder criteriaBuilder = entitytManager.getCriteriaBuilder();
 		CriteriaQuery<Object[]> criteriaQuery = criteriaBuilder.createQuery(Object[].class);
 		Root<ExpenseModel> root = criteriaQuery.from(ExpenseModel.class);
 		Expression<Integer> year = criteriaBuilder.function("year", Integer.class, root.get("createDate"));
 		Expression<String> monthName = criteriaBuilder.function("monthname", String.class, root.get("createDate"));
-		Expression<Integer> summ = criteriaBuilder.sum(root.get("expenseAmount") );
-		
-		criteriaQuery.multiselect(year,monthName,summ);
-		
+		Expression<Integer> summ = criteriaBuilder.sum(root.get("expenseAmount"));
+		criteriaQuery.multiselect(year, monthName, summ);
 		List<Object[]> expenses = new ArrayList<Object[]>();
-		
-		expenses=entitytManager.createQuery(criteriaQuery).getResultList();
-		
-		for (Object[] expenseModel : expenses) {
-			System.out.println("sum"+summ);
-		}
-		
-	//	String jpql = "select monthname(e.createDate),YEAR(e.createDate), SUM(e.expenseAmount) from ExpenseModel e GROUP BY monthname(e.createDate) ";
-		//List<Object> data = new ArrayList<Object>();
-		return expenses; 
+		expenses = entitytManager.createQuery(criteriaQuery).getResultList();
+		// String jpql = "select monthname(e.createDate),YEAR(e.createDate),
+		// SUM(e.expenseAmount) from ExpenseModel e GROUP BY monthname(e.createDate) ";
+		// List<Object> data = new ArrayList<Object>();
+		return expenses;
 	}
 
 	@Override
@@ -75,8 +67,8 @@ public class ExpenseDao implements IExpenseDao{
 		CriteriaBuilder criteriaBuilder = entitytManager.getCriteriaBuilder();
 		CriteriaQuery<Double> criteriaQuery = criteriaBuilder.createQuery(Double.class);
 		Root<ExpenseModel> root = criteriaQuery.from(ExpenseModel.class);
-		 criteriaQuery.select(criteriaBuilder.sum(root.get("expenseAmount")));
-		 TypedQuery<Double> typedQuery = entitytManager.createQuery(criteriaQuery);
+		criteriaQuery.select(criteriaBuilder.sum(root.get("expenseAmount")));
+		TypedQuery<Double> typedQuery = entitytManager.createQuery(criteriaQuery);
 		return typedQuery.getSingleResult();
 	}
 
