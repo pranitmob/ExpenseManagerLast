@@ -4,6 +4,7 @@ Following application is simple backend for Expense Manager App
 use cases:-
 
 1.User can register and login with email and password:
+
   1.1 http://localhost:8080/user/register :- after hitting this URL with post by following body content :-   
      "firstName": "pranit",
     "lastName": "sakunde",
