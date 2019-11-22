@@ -52,7 +52,7 @@ public class ExpenseDao implements IExpenseDao {
 		Expression<Integer> year = criteriaBuilder.function("year", Integer.class, root.get("createDate"));
 		Expression<String> monthName = criteriaBuilder.function("monthname", String.class, root.get("createDate"));
 		Expression<Integer> summ = criteriaBuilder.sum(root.get("expenseAmount"));
-		criteriaQuery.multiselect(year, monthName, summ);
+		criteriaQuery.multiselect(year, monthName, summ).groupBy(monthName);
 		List<Object[]> expenses = new ArrayList<Object[]>();
 		expenses = entitytManager.createQuery(criteriaQuery).getResultList();
 		// String jpql = "select monthname(e.createDate),YEAR(e.createDate),

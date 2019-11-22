@@ -3266,3 +3266,131 @@ Action:
 
 Consider defining a bean of type 'com.app.ExpenseManagerLast.dao.ICategoryDao' in your configuration.
 
+2019-11-22 10:52:16.759  INFO 53720 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 53720 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-22 10:52:16.763  INFO 53720 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-22 10:52:16.827  INFO 53720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-22 10:52:16.827  INFO 53720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-22 10:52:17.509  INFO 53720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-22 10:52:17.575  INFO 53720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 3 repository interfaces.
+2019-11-22 10:52:17.804  INFO 53720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4ca48110] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-22 10:52:18.085  INFO 53720 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-11-22 10:52:18.102  INFO 53720 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-11-22 10:52:18.103  INFO 53720 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-22 10:52:18.311  INFO 53720 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-11-22 10:52:18.311  INFO 53720 --- [restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1484 ms
+2019-11-22 10:52:18.355 DEBUG 53720 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-22 10:52:18.438  INFO 53720 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-11-22 10:52:18.873  INFO 53720 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-11-22 10:52:18.912  INFO 53720 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-22 10:52:18.952  INFO 53720 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate Core {5.3.12.Final}
+2019-11-22 10:52:18.953  INFO 53720 --- [restartedMain] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-11-22 10:52:19.048  INFO 53720 --- [restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-22 10:52:19.160  INFO 53720 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-22 10:52:19.655 DEBUG 53720 --- [restartedMain] o.h.SQL                                  : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-22 10:52:19.996  INFO 53720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 10:52:20.061  INFO 53720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-22 10:52:20.662  WARN 53720 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-22 10:52:20.942  INFO 53720 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-22 10:52:21.076  INFO 53720 --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-22 10:52:21.298  INFO 53720 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-11-22 10:52:21.424  INFO 53720 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-22 10:52:21.455  INFO 53720 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-22 10:52:21.486  INFO 53720 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-22 10:52:21.663  INFO 53720 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-22 10:52:21.665  INFO 53720 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Started ExpenseManagerlastApplication in 5.194 seconds (JVM running for 6.276)
+2019-11-22 10:53:21.038  INFO 53720 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-22 10:53:21.038  INFO 53720 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-11-22 10:53:21.047  INFO 53720 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2019-11-22 10:53:21.059 DEBUG 53720 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/loginUser]
+2019-11-22 10:53:21.204  INFO 53720 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-22 10:53:21.292 DEBUG 53720 --- [http-nio-8080-exec-1] o.h.SQL                                  : select usermodel0_.user_id as user_id1_2_, usermodel0_.email_id as email_id2_2_, usermodel0_.first_name as first_na3_2_, usermodel0_.last_name as last_nam4_2_, usermodel0_.password as password5_2_ from user usermodel0_ where usermodel0_.email_id=? and usermodel0_.password=?
+2019-11-22 10:53:21.413  WARN 53720 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.app.ExpenseManagerLast.Exception.UserNotFoundException]
+2019-11-22 10:53:21.414 DEBUG 53720 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/loginUser;payload={
+ 
+    "emailId": "pranit@gmail.com",
+    "password": "panda"
+ 
+}]
+2019-11-22 10:54:17.082 DEBUG 53720 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/register]
+2019-11-22 10:54:17.083  INFO 53720 --- [http-nio-8080-exec-3] c.a.E.c.UserController                   : User Registeration
+2019-11-22 10:54:17.165 DEBUG 53720 --- [http-nio-8080-exec-3] o.h.SQL                                  : insert into user (email_id, first_name, last_name, password) values (?, ?, ?, ?)
+2019-11-22 10:54:17.265 DEBUG 53720 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/register;payload={
+    "firstName": "abce",
+    "lastName": "abcde",
+    "emailId": "abcdef@gmail.com",
+    "password": "aaaaf",
+    "confirmPassword": "aaaaf"
+}]
+2019-11-22 10:54:54.266 DEBUG 53720 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/register]
+2019-11-22 10:54:54.268  INFO 53720 --- [http-nio-8080-exec-4] c.a.E.c.UserController                   : User Registeration
+2019-11-22 10:54:54.270 DEBUG 53720 --- [http-nio-8080-exec-4] o.h.SQL                                  : insert into user (email_id, first_name, last_name, password) values (?, ?, ?, ?)
+2019-11-22 10:54:54.301 DEBUG 53720 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/register;payload={
+    "firstName": "abce",
+    "lastName": "abcde",
+    "emailId": "abcdef@gmail.com",
+    "password": "aaaaf",
+    "confirmPassword": "aaaaf"
+}]
+2019-11-22 10:56:14.209 DEBUG 53720 --- [http-nio-8080-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/loginUser]
+2019-11-22 10:56:14.212 DEBUG 53720 --- [http-nio-8080-exec-7] o.h.SQL                                  : select usermodel0_.user_id as user_id1_2_, usermodel0_.email_id as email_id2_2_, usermodel0_.first_name as first_na3_2_, usermodel0_.last_name as last_nam4_2_, usermodel0_.password as password5_2_ from user usermodel0_ where usermodel0_.email_id=? and usermodel0_.password=?
+2019-11-22 10:56:14.218  WARN 53720 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.app.ExpenseManagerLast.Exception.UserNotFoundException]
+2019-11-22 10:56:14.218 DEBUG 53720 --- [http-nio-8080-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/loginUser;payload={
+ 
+    "emailId": "pranit@gmail.com",
+    "password": "panda"
+ 
+}]
+2019-11-22 10:58:05.957 DEBUG 53720 --- [http-nio-8080-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/register]
+2019-11-22 10:58:05.959  INFO 53720 --- [http-nio-8080-exec-10] c.a.E.c.UserController                   : User Registeration
+2019-11-22 10:58:05.971 DEBUG 53720 --- [http-nio-8080-exec-10] o.h.SQL                                  : insert into user (email_id, first_name, last_name, password) values (?, ?, ?, ?)
+2019-11-22 10:58:06.005 DEBUG 53720 --- [http-nio-8080-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/register;payload={
+    "firstName": "abce",
+    "lastName": "abcde",
+    "email": "abcdef@gmail.com",
+    "password": "aaaaf",
+    "confirmPassword": "aaaaf"
+}]
+2019-11-22 10:58:57.560 DEBUG 53720 --- [http-nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/loginUser]
+2019-11-22 10:58:57.563 DEBUG 53720 --- [http-nio-8080-exec-2] o.h.SQL                                  : select usermodel0_.user_id as user_id1_2_, usermodel0_.email_id as email_id2_2_, usermodel0_.first_name as first_na3_2_, usermodel0_.last_name as last_nam4_2_, usermodel0_.password as password5_2_ from user usermodel0_ where usermodel0_.email_id=? and usermodel0_.password=?
+2019-11-22 10:58:57.625  INFO 53720 --- [http-nio-8080-exec-2] c.a.E.c.UserController                   : user Login
+2019-11-22 10:58:57.628 DEBUG 53720 --- [http-nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/loginUser;payload={
+ 
+    "email": "pranit@gmail.com",
+    "password": "panda"
+ 
+}]
+2019-11-22 10:59:44.214 DEBUG 53720 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getCategories]
+2019-11-22 10:59:44.225 DEBUG 53720 --- [http-nio-8080-exec-1] o.h.SQL                                  : select categorymo0_.category_id as category1_0_, categorymo0_.category as category2_0_ from category categorymo0_
+2019-11-22 10:59:44.262 DEBUG 53720 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getCategories]
+2019-11-22 11:01:59.635 DEBUG 53720 --- [http-nio-8080-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getCategories]
+2019-11-22 11:01:59.639 DEBUG 53720 --- [http-nio-8080-exec-5] o.h.SQL                                  : select categorymo0_.category_id as category1_0_, categorymo0_.category as category2_0_ from category categorymo0_
+2019-11-22 11:01:59.646 DEBUG 53720 --- [http-nio-8080-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getCategories]
+2019-11-22 11:02:32.760 DEBUG 53720 --- [http-nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/addExpense]
+2019-11-22 11:02:32.828 DEBUG 53720 --- [http-nio-8080-exec-6] o.h.SQL                                  : insert into expense (category, create_date, description, expense_amount, expense_name, user_id) values (?, ?, ?, ?, ?, ?)
+2019-11-22 11:02:32.860 DEBUG 53720 --- [http-nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/addExpense;payload= {
+            "name": "yesitsadded",
+            "amount": 19912.0,
+            "date": "2019-08-10",
+            "description":"Assach",
+            "category": "Phone"
+}]
+2019-11-22 11:03:21.970 DEBUG 53720 --- [http-nio-8080-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getsum]
+2019-11-22 11:03:21.977 DEBUG 53720 --- [http-nio-8080-exec-7] o.h.SQL                                  : select sum(expensemod0_.expense_amount) as col_0_0_ from expense expensemod0_
+2019-11-22 11:03:22.316 DEBUG 53720 --- [http-nio-8080-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getsum]
+2019-11-22 11:03:57.093 DEBUG 53720 --- [http-nio-8080-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getMonthlyExpenses]
+2019-11-22 11:03:57.125 DEBUG 53720 --- [http-nio-8080-exec-8] o.h.SQL                                  : select year(expensemod0_.create_date) as col_0_0_, monthname(expensemod0_.create_date) as col_1_0_, sum(expensemod0_.expense_amount) as col_2_0_ from expense expensemod0_
+2019-11-22 11:03:57.220 DEBUG 53720 --- [http-nio-8080-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getMonthlyExpenses]
+2019-11-22 11:05:50.746 DEBUG 53720 --- [http-nio-8080-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getMonthlyExpenses]
+2019-11-22 11:05:50.749 DEBUG 53720 --- [http-nio-8080-exec-10] o.h.SQL                                  : select year(expensemod0_.create_date) as col_0_0_, monthname(expensemod0_.create_date) as col_1_0_, sum(expensemod0_.expense_amount) as col_2_0_ from expense expensemod0_
+2019-11-22 11:05:50.753 DEBUG 53720 --- [http-nio-8080-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getMonthlyExpenses]
+2019-11-22 11:05:53.515 DEBUG 53720 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getMonthlyExpenses]
+2019-11-22 11:05:53.517 DEBUG 53720 --- [http-nio-8080-exec-1] o.h.SQL                                  : select year(expensemod0_.create_date) as col_0_0_, monthname(expensemod0_.create_date) as col_1_0_, sum(expensemod0_.expense_amount) as col_2_0_ from expense expensemod0_
+2019-11-22 11:05:53.521 DEBUG 53720 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getMonthlyExpenses]
+2019-11-22 11:06:22.680 DEBUG 53720 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getMonthlyExpenses]
+2019-11-22 11:06:22.681 DEBUG 53720 --- [http-nio-8080-exec-3] o.h.SQL                                  : select year(expensemod0_.create_date) as col_0_0_, monthname(expensemod0_.create_date) as col_1_0_, sum(expensemod0_.expense_amount) as col_2_0_ from expense expensemod0_
+2019-11-22 11:06:22.684 DEBUG 53720 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getMonthlyExpenses]
+2019-11-22 11:06:23.563 DEBUG 53720 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getMonthlyExpenses]
+2019-11-22 11:06:23.564 DEBUG 53720 --- [http-nio-8080-exec-4] o.h.SQL                                  : select year(expensemod0_.create_date) as col_0_0_, monthname(expensemod0_.create_date) as col_1_0_, sum(expensemod0_.expense_amount) as col_2_0_ from expense expensemod0_
+2019-11-22 11:06:23.568 DEBUG 53720 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getMonthlyExpenses]
