@@ -38,7 +38,6 @@ public class ExpenseDao implements IExpenseDao {
 		expense.setExpenseAmount(expenseDto.getAmount());
 		expense.setCategory(expenseDto.getCategory());
 		expense.setDescription(expenseDto.getDescription());
-
 		ExpenseModel expenseDb = expenseRepo.save(expense);
 		return "Expense added with name" + expenseDb.getExpenseName();
 	}

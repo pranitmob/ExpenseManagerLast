@@ -3394,3 +3394,160 @@ Consider defining a bean of type 'com.app.ExpenseManagerLast.dao.ICategoryDao' i
 2019-11-22 11:06:23.563 DEBUG 53720 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getMonthlyExpenses]
 2019-11-22 11:06:23.564 DEBUG 53720 --- [http-nio-8080-exec-4] o.h.SQL                                  : select year(expensemod0_.create_date) as col_0_0_, monthname(expensemod0_.create_date) as col_1_0_, sum(expensemod0_.expense_amount) as col_2_0_ from expense expensemod0_
 2019-11-22 11:06:23.568 DEBUG 53720 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getMonthlyExpenses]
+2019-11-22 11:15:34.396  INFO 53720 --- [Thread-6] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-22 11:15:34.399  INFO 53720 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 11:15:34.407  INFO 53720 --- [Thread-6] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-11-22 11:15:34.415  INFO 53720 --- [Thread-6] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-11-22 11:15:34.745  INFO 53720 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 53720 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-22 11:15:34.746  INFO 53720 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-22 11:15:35.221  INFO 53720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-22 11:15:35.241  INFO 53720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 3 repository interfaces.
+2019-11-22 11:15:35.291  INFO 53720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4ca48110] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-22 11:15:35.542  INFO 53720 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-11-22 11:15:35.543  INFO 53720 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-11-22 11:15:35.544  INFO 53720 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-22 11:15:35.660  INFO 53720 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-11-22 11:15:35.660  INFO 53720 --- [restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 913 ms
+2019-11-22 11:15:35.678 DEBUG 53720 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-22 11:15:35.713  INFO 53720 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2019-11-22 11:15:35.728  INFO 53720 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2019-11-22 11:15:35.736  INFO 53720 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-22 11:15:35.758  INFO 53720 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-22 11:15:35.833 DEBUG 53720 --- [restartedMain] o.h.SQL                                  : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-22 11:15:36.152  INFO 53720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 11:15:36.165  INFO 53720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-22 11:15:36.311  WARN 53720 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-22 11:15:36.355  INFO 53720 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-22 11:15:36.394  INFO 53720 --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-22 11:15:36.401  INFO 53720 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-11-22 11:15:36.455  INFO 53720 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-22 11:15:36.455  INFO 53720 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-22 11:15:36.459  INFO 53720 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-22 11:15:36.513  INFO 53720 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-22 11:15:36.514  INFO 53720 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Started ExpenseManagerlastApplication in 1.814 seconds (JVM running for 1401.124)
+2019-11-22 11:15:36.516  INFO 53720 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-22 11:15:39.861  INFO 53720 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-22 11:15:39.861  INFO 53720 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-11-22 11:15:39.868  INFO 53720 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2019-11-22 11:15:39.869 DEBUG 53720 --- [http-nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getMonthlyExpenses]
+2019-11-22 11:15:39.875  INFO 53720 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-22 11:15:39.877 DEBUG 53720 --- [http-nio-8080-exec-2] o.h.SQL                                  : select year(expensemod0_.create_date) as col_0_0_, monthname(expensemod0_.create_date) as col_1_0_, sum(expensemod0_.expense_amount) as col_2_0_ from expense expensemod0_ group by monthname(expensemod0_.create_date)
+2019-11-22 11:15:39.899 DEBUG 53720 --- [http-nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getMonthlyExpenses]
+2019-11-22 11:17:42.536 DEBUG 53720 --- [http-nio-8080-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/getMonthlyExpenses]
+2019-11-22 11:17:42.538 DEBUG 53720 --- [http-nio-8080-exec-5] o.h.SQL                                  : select year(expensemod0_.create_date) as col_0_0_, monthname(expensemod0_.create_date) as col_1_0_, sum(expensemod0_.expense_amount) as col_2_0_ from expense expensemod0_ group by monthname(expensemod0_.create_date)
+2019-11-22 11:17:42.543 DEBUG 53720 --- [http-nio-8080-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/getMonthlyExpenses]
+2019-11-22 11:18:09.873  INFO 53720 --- [Thread-11] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-22 11:18:09.874  INFO 53720 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 11:18:09.875  INFO 53720 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2019-11-22 11:18:09.883  INFO 53720 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2019-11-22 11:18:10.175  INFO 53720 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 53720 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-22 11:18:10.175  INFO 53720 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-22 11:18:10.529  INFO 53720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-22 11:18:10.546  INFO 53720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 3 repository interfaces.
+2019-11-22 11:18:10.583  INFO 53720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4ca48110] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-22 11:18:10.831  INFO 53720 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-11-22 11:18:10.832  INFO 53720 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-11-22 11:18:10.832  INFO 53720 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-22 11:18:10.956  INFO 53720 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-11-22 11:18:10.956  INFO 53720 --- [restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 780 ms
+2019-11-22 11:18:10.972 DEBUG 53720 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-22 11:18:11.003  INFO 53720 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2019-11-22 11:18:11.017  INFO 53720 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2019-11-22 11:18:11.025  INFO 53720 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-22 11:18:11.047  INFO 53720 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-22 11:18:11.116 DEBUG 53720 --- [restartedMain] o.h.SQL                                  : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-22 11:18:11.424  INFO 53720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 11:18:11.456  INFO 53720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-22 11:18:11.599  WARN 53720 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-22 11:18:11.644  INFO 53720 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-22 11:18:11.681  INFO 53720 --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-22 11:18:11.688  INFO 53720 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-11-22 11:18:11.742  INFO 53720 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-22 11:18:11.743  INFO 53720 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-22 11:18:11.746  INFO 53720 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-22 11:18:11.798  INFO 53720 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-22 11:18:11.799  INFO 53720 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Started ExpenseManagerlastApplication in 1.676 seconds (JVM running for 1556.409)
+2019-11-22 11:18:11.801  INFO 53720 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-22 12:00:36.400  INFO 53720 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-22 12:00:36.400  INFO 53720 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-11-22 12:00:36.405  INFO 53720 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2019-11-22 12:00:36.405 DEBUG 53720 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/loginUser]
+2019-11-22 12:00:36.415  INFO 53720 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-22 12:00:36.417 DEBUG 53720 --- [http-nio-8080-exec-1] o.h.SQL                                  : select usermodel0_.user_id as user_id1_2_, usermodel0_.email_id as email_id2_2_, usermodel0_.first_name as first_na3_2_, usermodel0_.last_name as last_nam4_2_, usermodel0_.password as password5_2_ from user usermodel0_ where usermodel0_.email_id=? and usermodel0_.password=?
+2019-11-22 12:00:36.427  WARN 53720 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.app.ExpenseManagerLast.Exception.UserNotFoundException]
+2019-11-22 12:00:36.427 DEBUG 53720 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/loginUser;payload={
+ 
+    "emailId": "pranit@gmail.com",
+    "password": "panda"
+ 
+}]
+2019-11-22 12:00:44.780 DEBUG 53720 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/loginUser]
+2019-11-22 12:00:44.783 DEBUG 53720 --- [http-nio-8080-exec-3] o.h.SQL                                  : select usermodel0_.user_id as user_id1_2_, usermodel0_.email_id as email_id2_2_, usermodel0_.first_name as first_na3_2_, usermodel0_.last_name as last_nam4_2_, usermodel0_.password as password5_2_ from user usermodel0_ where usermodel0_.email_id=? and usermodel0_.password=?
+2019-11-22 12:00:44.786  INFO 53720 --- [http-nio-8080-exec-3] c.a.E.c.UserController                   : user Login
+2019-11-22 12:00:44.789 DEBUG 53720 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/loginUser;payload={
+ 
+    "email": "pranit@gmail.com",
+    "password": "panda"
+ 
+}]
+2019-11-22 12:43:33.605  INFO 53720 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-11-22 12:43:33.608  INFO 53720 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-22 12:43:33.608  INFO 53720 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 12:43:33.609  INFO 53720 --- [RMI TCP Connection(3)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2019-11-22 12:43:33.616  INFO 53720 --- [RMI TCP Connection(3)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2019-11-22 12:43:43.829  INFO 73132 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 73132 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-22 12:43:43.833  INFO 73132 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-22 12:43:43.861  INFO 73132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-22 12:43:43.861  INFO 73132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-22 12:43:44.598  INFO 73132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-22 12:43:44.657  INFO 73132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 3 repository interfaces.
+2019-11-22 12:43:44.897  INFO 73132 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4aeb52f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-22 12:43:45.187  INFO 73132 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-11-22 12:43:45.204  INFO 73132 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-11-22 12:43:45.204  INFO 73132 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-22 12:43:45.415  INFO 73132 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-11-22 12:43:45.415  INFO 73132 --- [restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1554 ms
+2019-11-22 12:43:45.459 DEBUG 73132 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-22 12:43:45.550  INFO 73132 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-11-22 12:43:45.953  INFO 73132 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-11-22 12:43:45.989  INFO 73132 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-22 12:43:46.028  INFO 73132 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate Core {5.3.12.Final}
+2019-11-22 12:43:46.029  INFO 73132 --- [restartedMain] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-11-22 12:43:46.128  INFO 73132 --- [restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-22 12:43:46.235  INFO 73132 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-22 12:43:46.720 DEBUG 73132 --- [restartedMain] o.h.SQL                                  : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-22 12:43:47.041  INFO 73132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 12:43:47.117  INFO 73132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-22 12:43:47.607  WARN 73132 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-22 12:43:47.732  INFO 73132 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-22 12:43:47.830  INFO 73132 --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-22 12:43:48.029  INFO 73132 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-11-22 12:43:48.133  INFO 73132 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-22 12:43:48.146  INFO 73132 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-22 12:43:48.168  INFO 73132 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-22 12:43:48.337  INFO 73132 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-22 12:43:48.338  INFO 73132 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Started ExpenseManagerlastApplication in 4.816 seconds (JVM running for 5.941)
+2019-11-22 12:44:36.255  INFO 73132 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-22 12:44:36.255  INFO 73132 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-11-22 12:44:36.264  INFO 73132 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 9 ms
+2019-11-22 12:44:36.287 DEBUG 73132 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/v2/api-docs]
+2019-11-22 12:44:36.482 DEBUG 73132 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/v2/api-docs]
+2019-11-22 15:58:18.326 DEBUG 73132 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/loginUser]
+2019-11-22 15:58:18.373 DEBUG 73132 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/loginUser]
+2019-11-22 15:58:18.379 DEBUG 73132 --- [http-nio-8080-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/user/loginUser]
+2019-11-22 15:58:18.470  INFO 73132 --- [http-nio-8080-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-22 15:58:18.540 DEBUG 73132 --- [http-nio-8080-exec-5] o.h.SQL                                  : select usermodel0_.user_id as user_id1_2_, usermodel0_.email_id as email_id2_2_, usermodel0_.first_name as first_na3_2_, usermodel0_.last_name as last_nam4_2_, usermodel0_.password as password5_2_ from user usermodel0_ where usermodel0_.email_id=? and usermodel0_.password=?
+2019-11-22 15:58:18.572  INFO 73132 --- [http-nio-8080-exec-5] c.a.E.c.UserController                   : user Login
+2019-11-22 15:58:18.580 DEBUG 73132 --- [http-nio-8080-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/user/loginUser;payload={"email":"pranit@gmail.com","password":"panda"}]
+2019-11-22 16:55:52.876  WARN 73132 --- [HikariPool-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m36s334ms310µs800ns).
+2019-11-22 17:12:12.719  INFO 73132 --- [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-11-22 17:12:12.727  INFO 73132 --- [RMI TCP Connection(6)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-22 17:12:12.730  INFO 73132 --- [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 17:12:12.743  INFO 73132 --- [RMI TCP Connection(6)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-11-22 17:12:12.759  INFO 73132 --- [RMI TCP Connection(6)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
