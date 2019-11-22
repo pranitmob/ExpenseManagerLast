@@ -1,7 +1,26 @@
 # ExpenseManagerLast
-contains Back-end for Expense Manager Application
+Following application is simple backend for Expense Manager App 
 
-Recent changes : 
-1 added DTO layer.
+use cases:-
 
-2 used JPA repository for Category and User services
+1.User can register and login with email and password:
+  1.1 http://localhost:8080/user/register :- after hitting this URL with post by following body content :-   
+     "firstName": "pranit",
+    "lastName": "sakunde",
+    "emailId": "pranit@gmail.com",
+    "password": "*******",
+    "confirmPassword": "*******"
+    user will be registered.
+    
+   1.2 http://localhost:8080/user/loginUser :- after hitting this URL with post by following body content:-
+    "emailId": "pranit@gmail.com",
+    "password": "*******"
+     it will return user details as a payload :-
+    "firstName": "pranit",
+    "lastName": "sakunde",
+    "email": "pranit@gmail.com",
+    "password": null,
+    "confirmPassword": null
+     
+      
+      
