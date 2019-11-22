@@ -14,9 +14,9 @@ public class Email
 	public void sendEmail()
 	{
 		SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-		simpleMailMessage.setTo("knagesh003@gmail.com","kul.akash123@gmail.com","ramankulkarni517@gmail.com","d.chanewad@gmail.com","govindkapure98@gmail.com");
-		simpleMailMessage.setSubject("Aamcha Nagu Lai Gunacha Aaahe");
-		simpleMailMessage.setText("Hello Aaku/Puru/Datta Bhaiya \n\n Nagesh said don't give him money anymore because he is going to be millionaire in future and then he will give us money(Datta bhaiya's 20k referal amount too).");
+		simpleMailMessage.setTo("pranit.sakunde@mobiliya.com");
+		simpleMailMessage.setSubject("Tests email for spring boot application");
+		simpleMailMessage.setText("Test message for spring boot application");
 		
 		javaMailSender.send(simpleMailMessage);
 	}
