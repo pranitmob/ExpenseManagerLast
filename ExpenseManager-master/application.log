@@ -3164,3 +3164,105 @@ public org.springframework.http.ResponseEntity<?> com.app.ExpenseManagerLast.con
 2019-11-21 11:55:24.770  INFO 22888 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2019-11-21 11:55:24.773  INFO 22888 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2019-11-21 11:55:24.778  INFO 22888 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-11-22 10:49:59.607  INFO 85352 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 85352 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-22 10:49:59.617  INFO 85352 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-22 10:49:59.678  INFO 85352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-22 10:49:59.678  INFO 85352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-22 10:50:00.789  INFO 85352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-22 10:50:00.880  INFO 85352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84ms. Found 3 repository interfaces.
+2019-11-22 10:50:01.169  INFO 85352 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$819e8dcb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-22 10:50:01.499  INFO 85352 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-11-22 10:50:01.532  INFO 85352 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-11-22 10:50:01.532  INFO 85352 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-22 10:50:01.795  INFO 85352 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-11-22 10:50:01.795  INFO 85352 --- [restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2117 ms
+2019-11-22 10:50:01.848 DEBUG 85352 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-22 10:50:02.012  INFO 85352 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-11-22 10:50:02.428  INFO 85352 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-11-22 10:50:02.488  INFO 85352 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-22 10:50:02.540  INFO 85352 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate Core {5.3.12.Final}
+2019-11-22 10:50:02.541  INFO 85352 --- [restartedMain] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-11-22 10:50:02.823  INFO 85352 --- [restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-22 10:50:03.192  INFO 85352 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-22 10:50:04.191 DEBUG 85352 --- [restartedMain] o.h.SQL                                  : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-22 10:50:04.877  INFO 85352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 10:50:05.087  INFO 85352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-22 10:50:06.015  WARN 85352 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'categoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryServiceImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.app.ExpenseManagerLast.dao.ICategoryDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-11-22 10:50:06.015  INFO 85352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 10:50:06.018  INFO 85352 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-11-22 10:50:06.025  INFO 85352 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-11-22 10:50:06.026  INFO 85352 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2019-11-22 10:50:06.034  INFO 85352 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-22 10:50:06.314 ERROR 85352 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dao in com.app.ExpenseManagerLast.service.CategoryServiceImpl required a bean of type 'com.app.ExpenseManagerLast.dao.ICategoryDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.app.ExpenseManagerLast.dao.ICategoryDao' in your configuration.
+
+2019-11-22 10:50:42.585  INFO 88700 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : Starting ExpenseManagerlastApplication on PranitS-PC-188 with PID 88700 (D:\ExpenseManagerLast\ExpenseManager-master\target\classes started by Pranit in D:\ExpenseManagerLast\ExpenseManager-master)
+2019-11-22 10:50:42.589  INFO 88700 --- [restartedMain] c.a.E.ExpenseManagerlastApplication      : No active profile set, falling back to default profiles: default
+2019-11-22 10:50:42.628  INFO 88700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-22 10:50:42.628  INFO 88700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-22 10:50:43.341  INFO 88700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-22 10:50:43.395  INFO 88700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 3 repository interfaces.
+2019-11-22 10:50:43.628  INFO 88700 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc9be703] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-22 10:50:43.998  INFO 88700 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-11-22 10:50:44.028  INFO 88700 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-11-22 10:50:44.030  INFO 88700 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-22 10:50:44.262  INFO 88700 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-11-22 10:50:44.262  INFO 88700 --- [restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1634 ms
+2019-11-22 10:50:44.313 DEBUG 88700 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2019-11-22 10:50:44.406  INFO 88700 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-11-22 10:50:44.824  INFO 88700 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-11-22 10:50:44.861  INFO 88700 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-22 10:50:44.902  INFO 88700 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate Core {5.3.12.Final}
+2019-11-22 10:50:44.903  INFO 88700 --- [restartedMain] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-11-22 10:50:45.002  INFO 88700 --- [restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-22 10:50:45.110  INFO 88700 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-22 10:50:45.648 DEBUG 88700 --- [restartedMain] o.h.SQL                                  : alter table expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user (user_id)
+2019-11-22 10:50:46.017  INFO 88700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 10:50:46.090  INFO 88700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-22 10:50:46.333  WARN 88700 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'categoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryServiceImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.app.ExpenseManagerLast.dao.ICategoryDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-11-22 10:50:46.333  INFO 88700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-22 10:50:46.336  INFO 88700 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-11-22 10:50:46.340  INFO 88700 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-11-22 10:50:46.342  INFO 88700 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2019-11-22 10:50:46.350  INFO 88700 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-22 10:50:46.436 ERROR 88700 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dao in com.app.ExpenseManagerLast.service.CategoryServiceImpl required a bean of type 'com.app.ExpenseManagerLast.dao.ICategoryDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.app.ExpenseManagerLast.dao.ICategoryDao' in your configuration.
+

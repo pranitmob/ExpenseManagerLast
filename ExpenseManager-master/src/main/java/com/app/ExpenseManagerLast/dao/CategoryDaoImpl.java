@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.app.ExpenseManagerLast.model.CategoryModel;
 import com.app.ExpenseManagerLast.repository.CategoryRepository;
 
+@Repository
 public class CategoryDaoImpl implements ICategoryDao {
 
 	@Autowired
