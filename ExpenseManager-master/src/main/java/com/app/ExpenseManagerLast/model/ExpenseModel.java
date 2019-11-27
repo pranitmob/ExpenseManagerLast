@@ -46,7 +46,7 @@ public class ExpenseModel {
 	@JoinColumn(name = "user_id")
 	@JsonIgnore
 	private UserModel user;
-	
+		
 	public ExpenseModel() {
 
 	}

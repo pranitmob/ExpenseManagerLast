@@ -40,6 +40,7 @@ public class UserModel {
 	@OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
 	private List<ExpenseModel> expenses;
 
+
 	public UserModel() {
 		// TODO Auto-generated constructor stub
 	}
