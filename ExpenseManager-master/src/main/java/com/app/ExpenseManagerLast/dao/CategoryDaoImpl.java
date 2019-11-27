@@ -17,12 +17,11 @@ public class CategoryDaoImpl implements ICategoryDao {
 	
 	@Override
 	public List<Object> getAllCategories() {
-		
 		// TODO Auto-generated method stub
 		List<CategoryModel> c = catRepo.findAll();
 		List<Object> obj = new ArrayList<Object>();
 		obj.addAll(c);
-
+			
 		return obj;
 	}
 

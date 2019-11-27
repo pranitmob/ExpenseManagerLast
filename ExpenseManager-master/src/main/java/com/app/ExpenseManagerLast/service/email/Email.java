@@ -28,6 +28,7 @@ public class Email
 		javaMailSender.send(simpleMailMessage);
 	}
 	
+	
 	public void sendEmailWithAttachment() throws MessagingException
 	{
 		MimeMessage mimeMessage = javaMailSender.createMimeMessage();
@@ -35,7 +36,6 @@ public class Email
 		mimeMessageHelper.setTo("pranit.sakunde@mobiliya.com");
 		mimeMessageHelper.setSubject("Test Mail for Spring boot application with attachment");
 		mimeMessageHelper.setText("Test Mail for Spring boot application with attachment");
-		
 		FileSystemResource fileSystemResource = new FileSystemResource(new File("pom.xml"));
 		mimeMessageHelper.addAttachment("Test", fileSystemResource);
 		javaMailSender.send(mimeMessage);

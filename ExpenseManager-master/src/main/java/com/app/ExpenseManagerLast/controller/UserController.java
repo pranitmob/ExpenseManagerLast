@@ -24,7 +24,11 @@ import com.app.ExpenseManagerLast.service.IExpenseService;
 import com.app.ExpenseManagerLast.service.IUserService;
 
 /**
+ * Controller class which maps all the incoming requests of user
+ */
+/**
  * @author Pranit
+ *
  */
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
@@ -41,7 +45,7 @@ public class UserController {
 
 	@Autowired
 	private ICategoryService categoryService;
-
+	
 	@PostMapping("/register")
 	public ResponseEntity<?> registerUser(@RequestBody UserDetails user) {
 		try {
@@ -74,6 +78,7 @@ public class UserController {
 	@PostMapping("/addExpense")
 	public ResponseEntity<String> addExpense(@RequestBody ExpenseDetails expense) {
 		try {
+			log.info("Add expense from controller");
 			return new ResponseEntity<String>(expenseService.addExpense(expense), HttpStatus.OK);
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -83,9 +88,13 @@ public class UserController {
 
 	}
 
+	/**get list of all categories
+	 * @return List<Object> if successful or String in case of error
+ 	 */
 	@GetMapping("/getCategories")
 	public ResponseEntity<?> getAllCategories() {
 		try {
+			log.info("Get all categories");
 			return new ResponseEntity<List<Object>>(categoryService.getAllCategories(), HttpStatus.OK);
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -93,22 +102,30 @@ public class UserController {
 		}
 	}
 
+	/**get list of monthly expenses
+	 * @return List of object array if successful or String in case of error	
+	 */
 	@GetMapping("/getMonthlyExpenses")
 	public ResponseEntity<?> getListOfExpenses() {
 		try {
+			   log.info("et Monthly expenses");  
 			return new ResponseEntity<List<Object[]>>(expenseService.getListOfExpenses(), HttpStatus.OK);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 			return new ResponseEntity<String>("Cannot fetch Monthly expenses", HttpStatus.SERVICE_UNAVAILABLE);
 		}
-
 	}
 	
 	
-	@GetMapping("/getsum")
+	/**
+	 * 
+	 * @return Sum of expenses 
+	 */
+	@GetMapping("/getSumOfExpenses")
 	public ResponseEntity<?> getSumOfAllExpenses() {
 		try {
+			log.info("");
 			return new ResponseEntity<Double>(expenseService.sumOfallExpense(), HttpStatus.OK);
 		} catch (Exception e) {
 			// TODO: handle exception
